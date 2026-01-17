@@ -1,0 +1,45 @@
+/* ui.css */
+/* Styling for the pipeline UI component */
+
+.pipeline-ui-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.react-flow__minimap {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  border: 1px solid #3b82f6 !important;
+  border-radius: 8px;
+}
+
+.react-flow__controls {
+  margin: 12px;
+}
+
+.react-flow__controls-button {
+  background: #3b82f6 !important;
+  border: 1px solid #60a5fa !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #60a5fa !important;
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.4) !important;
+}
+
+.react-flow__node {
+  padding: 0;
+}
+
+.react-flow__connection-path {
+  stroke: #3b82f6 !important;
+  stroke-width: 2;
+}
+
+.react-flow__connection {
+  stroke: #3b82f6 !important;
+}

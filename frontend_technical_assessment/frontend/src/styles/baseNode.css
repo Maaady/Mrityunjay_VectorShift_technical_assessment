@@ -1,0 +1,170 @@
+/* baseNode.css */
+/* Shared styling for all nodes */
+
+.base-node {
+  border-radius: 8px;
+  border: 2px solid #3b82f6;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #e0e7ff;
+  padding: 12px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.base-node:hover {
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  border-color: #60a5fa;
+}
+
+.base-node.selected {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.node-header {
+  padding: 4px 0 8px 0;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+  margin-bottom: 8px;
+}
+
+.node-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.node-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* Handle styling */
+.base-node .react-flow__handle {
+  background: #3b82f6;
+  border: 2px solid #1e293b;
+  width: 10px;
+  height: 10px;
+}
+
+.base-node .react-flow__handle:hover {
+  background: #60a5fa;
+}
+
+/* Input/label styling */
+.base-node input,
+.base-node select,
+.base-node textarea {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid #3b82f6;
+  color: #e0e7ff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 12px;
+  transition: border-color 0.2s;
+}
+
+.base-node input:focus,
+.base-node select:focus,
+.base-node textarea:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+.base-node label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+/* Node type specific colors */
+.base-node[data-node-type="customInput"] {
+  border-color: #10b981;
+}
+
+.base-node[data-node-type="customInput"] .node-title {
+  color: #34d399;
+}
+
+.base-node[data-node-type="customInput"] input,
+.base-node[data-node-type="customInput"] select {
+  border-color: #10b981;
+}
+
+.base-node[data-node-type="customOutput"] {
+  border-color: #f59e0b;
+}
+
+.base-node[data-node-type="customOutput"] .node-title {
+  color: #fbbf24;
+}
+
+.base-node[data-node-type="customOutput"] input,
+.base-node[data-node-type="customOutput"] select {
+  border-color: #f59e0b;
+}
+
+.base-node[data-node-type="llm"] {
+  border-color: #ec4899;
+}
+
+.base-node[data-node-type="llm"] .node-title {
+  color: #f472b6;
+}
+
+.base-node[data-node-type="text"] {
+  border-color: #8b5cf6;
+}
+
+.base-node[data-node-type="text"] .node-title {
+  color: #a78bfa;
+}
+
+/* Additional node types */
+.base-node[data-node-type="calculator"] {
+  border-color: #06b6d4;
+}
+
+.base-node[data-node-type="calculator"] .node-title {
+  color: #22d3ee;
+}
+
+.base-node[data-node-type="filter"] {
+  border-color: #14b8a6;
+}
+
+.base-node[data-node-type="filter"] .node-title {
+  color: #2dd4bf;
+}
+
+.base-node[data-node-type="merger"] {
+  border-color: #6366f1;
+}
+
+.base-node[data-node-type="merger"] .node-title {
+  color: #818cf8;
+}
+
+.base-node[data-node-type="logger"] {
+  border-color: #ef4444;
+}
+
+.base-node[data-node-type="logger"] .node-title {
+  color: #f87171;
+}
+
+.base-node[data-node-type="validator"] {
+  border-color: #8b5cf6;
+}
+
+.base-node[data-node-type="validator"] .node-title {
+  color: #c084fc;
+}
